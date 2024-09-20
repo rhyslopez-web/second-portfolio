@@ -4,6 +4,8 @@ import Layout from './Layout.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
+import { path } from 'framer-motion/client'
+import ProjectPage from './pages/ProjectPage.jsx'
 
 const route = createBrowserRouter([
   {
@@ -13,9 +15,13 @@ const route = createBrowserRouter([
       {
         path: "",
         element: <HomePage/>
+      },
+      {
+        path: '/project/:id',
+        element: <ProjectPage/>
       }
     ]
-  }
+  },
 ])
 
 

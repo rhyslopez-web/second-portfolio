@@ -11,9 +11,9 @@ const Footer = () => {
             {/* footer heading and animated arrow */}
             <div className='flex flex-wrap justify-between gap-10'>
                 <MainHeading>
-                    Let's 
+                    Let's Get 
                     <br/>
-                    Collaborate
+                    In Touch
                 </MainHeading>
 
                 <motion.button
@@ -22,7 +22,6 @@ const Footer = () => {
                     repeat: Infinity,       // Infinite repeat
                     repeatDelay: 2,         // Delay between repeats
                     repeatType: 'reverse',  // Reverse animation to go back to the original state
-                    ease: 'easeInOut',
                 }} 
                 className='border border-7 border-black rounded-full w-24 h-24 lg:h-64 lg:w-64 flex 
                 justify-center items-center hover:bg-black hover:text-white transition duration-200'>
@@ -32,10 +31,9 @@ const Footer = () => {
 
             {/* Social Links */}
             <ul className='flex flex-col lg:flex-row gap-5 lg:gap-10'>
-                <li><SocialLink label='LinkedIn'/></li>
-                <li><SocialLink label='Github'/></li>
-                <li><SocialLink label='Email'/></li>
-                <li><SocialLink label='Instagram'/></li>
+                <li><SocialLink href='https://www.linkedin.com/in/rhyslopez/' label ='LinkedIn'/></li>
+                <li><SocialLink href='https://github.com/rhyslopez-web' label='Github'/></li>
+                <li><SocialLink href='mailto:rhys.paulino@gmail.com' label='Email'/></li>
             </ul>
         </footer>
     </div>
@@ -47,7 +45,7 @@ export default Footer
 
 const SocialLink = ({label, href}) => {
     return(
-        <motion.button
+        <motion.a
         layout
         whileHover={{ 
             borderBottomWidth: '1px',  // Width of the bottom border on hover
@@ -61,8 +59,10 @@ const SocialLink = ({label, href}) => {
             boxSizing: 'inherit',
             borderBottom: '0px solid transparent' // Initial border is invisible
         }}
-        className='text-2xl text-neutral-500' href={href}>
+        className='text-2xl text-neutral-500' href={href}
+        target='_blank'
+        >
             {label}
-        </motion.button>
+        </motion.a>
     )
 }

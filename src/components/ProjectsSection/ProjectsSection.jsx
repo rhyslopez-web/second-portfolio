@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from '../Project/Project'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectsSection = () => {
     const BASE_URL = 'https://portfolio-strapi-cms-494nt.ondigitalocean.app/api/projects?populate=*'
@@ -23,12 +24,14 @@ const ProjectsSection = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 w-full'>
             {projects && (
                 projects.map((project, index) => (
-                    <Project
-                    key={index}
-                    src={project.attributes.CoverImage.data.attributes.formats.large.url}
-                    title={project.attributes.Title}
-                    description={project.attributes.Description}
-                    />
+                    <Link to={`/project/${project.id}`}>
+                        <Project
+                        key={index}
+                        src={project.attributes.CoverImage.data.attributes.formats.large.url}
+                        title={project.attributes.Title}
+                        description={project.attributes.Description}
+                        />
+                    </Link>
                 ))
             )}
         </div>
