@@ -12,7 +12,7 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='sticky top-0 left-0 right-0 w-full'>
+    <div className='sticky top-0 left-0 right-0 w-full z-20 bg-white'>
         <nav className='px-5 py-5 flex justify-between'>
             <div href="">
                 <Link>
@@ -31,7 +31,7 @@ export const Navbar = () => {
                     initial={{scaleY: 0, opacity: 0, transformOrigin: 'top'}}
                     animate={{scaleY: 1, opacity: 1, transformOrigin: 'top'}}
                     exit={{scaleY: 0}}
-                    className='h-[50vh] flex flex-col justify-center items-start gap-3 absolute top-0 left-0 right-0 -z-10 px-5 bg-neutral-100'>
+                    className='h-[50vh] flex flex-col justify-center items-start gap-3 absolute top-0 left-0 right-0 -z-10 px-5 bg-white'>
                         <li><Link>01. Projects</Link></li>
                         <li><Link>02. Experience</Link></li>
                         <li><Link>03. Hire Me</Link></li>
