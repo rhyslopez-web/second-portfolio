@@ -20,8 +20,8 @@ const ExperienceSection = () => {
     console.log(workExperience)
 
   return (
-    <>
-        <h2 className='w-full px-5 text-3xl'>// Work Experience</h2>
+    <div className='mb-28'>
+        <h2 className='w-full px-5 text-3xl mb-5'>Work Experience</h2>
 
         <div className='flex flex-col gap-16 p-5'>
             {workExperience && (
@@ -36,7 +36,7 @@ const ExperienceSection = () => {
                 ))
             )}
         </div>
-    </>
+    </div>
   )
 }
 

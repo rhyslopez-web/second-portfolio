@@ -9,7 +9,7 @@ const Experience = ({title, startDate, endDate, description}) => {
             <span>{endDate}</span>
         </div>
 
-        <h3 className='text-3xl font-medium'>{title}</h3>
+        <h3 className='text-4xl font-medium'>{title}</h3>
 
         <p>{description}</p>
     </div>

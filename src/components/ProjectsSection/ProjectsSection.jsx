@@ -17,22 +17,22 @@ const ProjectsSection = () => {
     }, [])
   
     return (
-    <>
-        <h2 className='w-full px-5 text-3xl'>// Projects</h2>
+    <div className='mb-28'>
+        <h2 className='w-full px-5 text-3xl mb-5'>Projects</h2>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 w-full'>
             {projects && (
                 projects.map((project, index) => (
                     <Project
                     key={index}
-                    src={project.attributes.Thumbnail.data.attributes.formats.large.url}
+                    src={project.attributes.CoverImage.data.attributes.formats.large.url}
                     title={project.attributes.Title}
                     description={project.attributes.Description}
                     />
                 ))
             )}
         </div>
-    </>
+    </div>
 )
 }
 

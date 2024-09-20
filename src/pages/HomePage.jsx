@@ -6,9 +6,9 @@ import ExperienceSection from '../components/ExperienceSection/ExperienceSection
 
 const HomePage = () => {
   return (
-    <div className='flex flex-col gap-20 items-center lg:max-w-7xl'>
+    <div className='lg:max-w-7xl'>
         {/* Hero Section */}
-        <div className='flex flex-col lg:gap-10 gap-5 items-start p-5'>
+        <div className='flex flex-col lg:gap-10 gap-5 items-start p-5 mb-28'>
             <h3 className='text-2xl text-neutral-500'>
                 Hello! I'm Rhys.
             </h3>            
