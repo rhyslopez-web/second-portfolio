@@ -22,7 +22,7 @@ const ProjectPage = () => {
     }, [params])
 
   return (
-    <div className='flex justify-center mb-28 mt-5'>
+    <div className='flex justify-center mb-28 mt-5 dark:text-neutral-200'>
         <div className='lg:max-w-7xl px-5 flex flex-col gap-10'>
             <div className='flex flex-col gap-5 items-start'>
                 <SecondaryHeading>

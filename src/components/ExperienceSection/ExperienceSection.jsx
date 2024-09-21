@@ -20,7 +20,7 @@ const ExperienceSection = () => {
     console.log(workExperience)
 
   return (
-    <div className='mb-28 px-5'>
+    <div id='experience-section' className='mb-28 px-5 dark:text-neutral-200'>
         <h2 className='w-full text-3xl'>Work Experience</h2>
 
         <div className='flex flex-col'>

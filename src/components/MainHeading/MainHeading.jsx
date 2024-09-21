@@ -17,7 +17,7 @@ const MainHeading = ({children, className}) => {
     transition={{
       duration: 0.7,
     }}
-    className={twMerge('text-3xl lg:text-7xl leading-normal lg:leading-relaxed font-medium' , className)}>
+    className={twMerge('text-3xl lg:text-7xl leading-normal lg:leading-relaxed font-medium dark:text-neutral-200' , className)}>
         {children}
     </motion.h1>
   )

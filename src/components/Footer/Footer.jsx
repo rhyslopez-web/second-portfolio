@@ -23,8 +23,8 @@ const Footer = () => {
                     repeatDelay: 2,         // Delay between repeats
                     repeatType: 'reverse',  // Reverse animation to go back to the original state
                 }} 
-                className='border border-7 border-black rounded-full w-24 h-24 lg:h-64 lg:w-64 flex 
-                justify-center items-center hover:bg-black hover:text-white transition duration-200'>
+                className='border border-7 border-black dark:border-neutral-200 rounded-full w-24 h-24 lg:h-64 lg:w-64 flex 
+                justify-center items-center hover:bg-black hover:text-white dark:text-white dark:hover:text-black dark:hover:bg-white transition duration-200'>
                     <ArrowRight size='150' strokeWidth='0.4'/>
                 </motion.button>
             </a>
