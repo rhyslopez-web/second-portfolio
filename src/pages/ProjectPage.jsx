@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import SecondaryHeading from '../components/SecondaryHeading/SecondaryHeading'
 import Button from '../components/Button/Button'
 import Transition from '../components/Transition/Transition'
+import { motion } from 'framer-motion'
+import SkillPill from '../components/SkillPill/SkillPill'
 
 const ProjectPage = () => {
 
@@ -36,10 +38,31 @@ const ProjectPage = () => {
                 <p>
                     {project && (project.attributes.AboutProject)}
                 </p>
+ 
+                
+                <ul className='flex flex-wrap lg:gap-5 gap-3 border-black'>
+                    {project && (project.attributes.skills.data.map((skill, index) => (
+                        <li key={index}>
+                            <SkillPill label={skill.attributes.Skill} />
+                        </li>
+                    )))}
+                </ul>
             </div>
 
+
             {/* First Project Image */}
-            <img className='rounded-xl lg:rounded-3xl' src={project && (project.attributes.Thumbnail2.data.attributes.formats.large.url)} alt="" />
+            <motion.img
+            initial={{
+            opacity: 0,
+            y: 200
+            }}
+            whileInView={{
+            opacity: 1,
+            y: 0,
+            }}
+            viewport={{ once: true }}
+            className='rounded-xl lg:rounded-3xl' src={project && (project.attributes.Thumbnail2.data.attributes.formats.large.url)} 
+            alt="" />
 
 
             {/* Goals for Project */}

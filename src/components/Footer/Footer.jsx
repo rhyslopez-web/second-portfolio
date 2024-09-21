@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className='flex flex-col gap-10'>
 
             {/* footer heading and animated arrow */}
-            <div className='flex flex-wrap justify-between gap-10'>
+            <a href='mailto:rhys.paulino@gmail.com' target='_blank' className='flex flex-wrap justify-between gap-10'>
                 <MainHeading>
                     Let's Get 
                     <br/>
@@ -27,7 +27,7 @@ const Footer = () => {
                 justify-center items-center hover:bg-black hover:text-white transition duration-200'>
                     <ArrowRight size='150' strokeWidth='0.4'/>
                 </motion.button>
-            </div>
+            </a>
 
             {/* Social Links */}
             <ul className='flex flex-col lg:flex-row gap-5 lg:gap-10'>
