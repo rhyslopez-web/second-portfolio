@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import SecondaryHeading from '../components/SecondaryHeading/SecondaryHeading'
-import { div } from 'framer-motion/m'
 import Button from '../components/Button/Button'
+import Transition from '../components/Transition/Transition'
 
 const ProjectPage = () => {
 
@@ -62,4 +62,4 @@ const ProjectPage = () => {
   )
 }
 
-export default ProjectPage
+export default Transition(ProjectPage)

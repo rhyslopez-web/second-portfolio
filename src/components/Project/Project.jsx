@@ -18,8 +18,8 @@ const Project = ({src, title, description}) => {
       duration: 0.7,
     }}
     className='flex flex-col gap-10 p-5'>
-        <div className='aspect-square border rounded-3xl bg-neutral-500'>
-            <img src={src} alt="" className='rounded-3xl' />
+        <div className='aspect-square rounded-3xl'>
+            <motion.img whileHover={{scale: 1.05}} src={src} alt="" className='rounded-3xl' />
         </div>
 
         <div className='flex justify-between items-center'>

@@ -1,0 +1,4 @@
+.mask{
+    mask-image: url('../../../public/Cursor.svg');
+    mask-repeat: no-repeat;
+}

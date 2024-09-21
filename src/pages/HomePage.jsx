@@ -3,6 +3,7 @@ import MainHeading from '../components/MainHeading/MainHeading'
 import Button from '../components/Button/Button'
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection'
+import Transition from '../components/Transition/Transition'
 
 const HomePage = () => {
   return (
@@ -15,13 +16,14 @@ const HomePage = () => {
             <MainHeading className={''}>
                 A Creative Web Developer and Designer Transforming Ideas Into Captivating Online Experiences
             </MainHeading>
-            <Button>Hire Me</Button>
+            <Button href='mailto:rhys.paulino@gmail.com'>Hire Me</Button>
         </div>
 
         <ProjectsSection/>
         <ExperienceSection/>
+        
     </div>
   )
 }
 
-export default HomePage
+export default Transition(HomePage)
