@@ -20,10 +20,10 @@ const ExperienceSection = () => {
     console.log(workExperience)
 
   return (
-    <div className='mb-28'>
-        <h2 className='w-full px-5 text-3xl mb-5'>Work Experience</h2>
+    <div className='mb-28 px-5'>
+        <h2 className='w-full text-3xl'>Work Experience</h2>
 
-        <div className='flex flex-col gap-16 p-5'>
+        <div className='flex flex-col'>
             {workExperience && (
                 workExperience.map((experience, index) => (
                     <Experience
@@ -31,6 +31,7 @@ const ExperienceSection = () => {
                     endDate={experience.attributes.EndDate}
                     key={index}
                     title={experience.attributes.Title}
+                    company={experience.attributes.Company}
                     description={experience.attributes.Description}
                     />
                 ))

@@ -21,8 +21,10 @@ const ProjectsSection = () => {
   
     const {x, y} = useMousePosition()
 
+    console.log(projects)
+
     return (
-    <div className='mb-28 relative'>
+    <div id='project-section' className='mb-28 relative'>
         <h2 className='w-full px-5 text-3xl mb-5'>Projects</h2>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 w-full'>

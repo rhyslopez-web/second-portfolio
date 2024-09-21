@@ -23,7 +23,7 @@ const ProjectPage = () => {
 
   return (
     <div className='flex justify-center mb-28 mt-5'>
-        <div className='lg:max-w-7xl px-5 flex flex-col gap-20'>
+        <div className='lg:max-w-7xl px-5 flex flex-col gap-10'>
             <div className='flex flex-col gap-5 items-start'>
                 <SecondaryHeading>
                     {project && (project.attributes.Title)}
@@ -37,9 +37,12 @@ const ProjectPage = () => {
                 <h2 className='text-xl lg:text-2xl leading-normal lg:leading-relaxed font-medium'>About Project</h2>
                 <p>
                     {project && (project.attributes.AboutProject)}
-                </p>
- 
-                
+                </p>                
+            </div>
+
+            <div className='flex flex-col gap-5'>
+                <h2 className='text-xl lg:text-2xl leading-normal lg:leading-relaxed font-medium'>Stack Used</h2>
+
                 <ul className='flex flex-wrap lg:gap-5 gap-3 border-black'>
                     {project && (project.attributes.skills.data.map((skill, index) => (
                         <li key={index}>
@@ -48,7 +51,6 @@ const ProjectPage = () => {
                     )))}
                 </ul>
             </div>
-
 
             {/* First Project Image */}
             <motion.img
