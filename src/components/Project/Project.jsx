@@ -28,7 +28,7 @@ const Project = ({src, title, description}) => {
                 <p>{description}</p>
             </div>
 
-            <Button/>
+            <Button></Button>
         </div>
     </motion.div>
   )
