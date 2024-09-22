@@ -17,7 +17,7 @@ const Layout = () => {
   
   return (
       <div className={isDarkMode ? 'dark' : ''}>
-        <div className='font-poppins flex flex-col items-center dark:bg-black transition-colors'>
+        <div className='font-poppins flex flex-col items-center bg-[#f1f1f1] dark:bg-[#121212] transition-colors'>
           <ScrollToTop/>
             <Navbar/>
             <AnimatePresence mode='wait'>

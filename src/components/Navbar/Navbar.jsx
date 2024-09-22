@@ -13,7 +13,7 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='sticky top-0 left-0 right-0 w-full z-20 bg-white dark:bg-black'>
+    <div className='sticky top-0 left-0 right-0 w-full z-20 bg-[#f1f1f1] dark:bg-[#121212]'>
         <nav className='px-5 py-5 flex justify-between'>
             <div href="">
                 <Link>
@@ -32,7 +32,7 @@ export const Navbar = () => {
                     initial={{scaleY: 0, opacity: 0, transformOrigin: 'top'}}
                     animate={{scaleY: 1, opacity: 1, transformOrigin: 'top'}}
                     exit={{scaleY: 0}}
-                    className='h-[50vh] flex flex-col justify-center items-start gap-3 absolute top-0 left-0 right-0 -z-10 px-5 bg-white dark:bg-black dark:text-neutral-200'>
+                    className='h-[50vh] flex flex-col justify-center items-start gap-3 absolute top-0 left-0 right-0 -z-10 px-5 bg-[#f1f1f1] dark:bg-[#121212] dark:text-neutral-200'>
                         <li><a href='#project-section' onClick={toggleMenuOpen} >01. Projects</a></li>
                         <li><a href='#experience-section' onClick={toggleMenuOpen} >02. Experience</a></li>
                         <li><a href='emailto:rhys.paulino@gmail.com' target='_blank' onClick={toggleMenuOpen}>03. Hire Me</a></li>

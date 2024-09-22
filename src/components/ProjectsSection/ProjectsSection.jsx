@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     console.log(projects)
 
     return (
-    <div id='project-section' className='mb-28 relative dark:bg-black dark:text-neutral-200'>
+    <div id='project-section' className='mb-28 relative dark:bg-[#121212] dark:text-neutral-200'>
         <h2 className='w-full px-5 text-3xl mb-5'>Projects</h2>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 w-full dark:text-neutral-200'>
