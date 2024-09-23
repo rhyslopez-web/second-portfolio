@@ -11,7 +11,7 @@ const DarkModeToggle = () => {
     <button 
     onClick={toggleDarkMode}
     className='w-14 h-14 p-2 flex justify-center items-center bg-black dark:bg-neutral-200 rounded-full fixed 
-    bottom-5 right-5 lg:bottom-10 lg:right-10'
+    bottom-5 right-5 lg:bottom-10 lg:right-10 z-50'
     >
       <AnimatePresence>
         <div>

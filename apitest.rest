@@ -1,0 +1,2 @@
+###
+get https://portfolio-strapi-cms-494nt.ondigitalocean.app/api/stacks?populate=*
