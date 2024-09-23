@@ -4,6 +4,7 @@ import Button from '../components/Button/Button'
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection'
 import Transition from '../components/Transition/Transition'
+import AboutSection from '../components/AboutSection/AboutSection'
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
 
         <ProjectsSection/>
         <ExperienceSection/>
+        <AboutSection/>
         
     </div>
   )
