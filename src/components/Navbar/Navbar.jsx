@@ -16,7 +16,7 @@ export const Navbar = () => {
     <div className='sticky top-0 left-0 right-0 w-full z-20 bg-[#f1f1f1] dark:bg-[#121212]'>
         <nav className='px-5 py-5 flex justify-between'>
             <div href="">
-                <Link>
+                <Link to='/'>
                     <img className='dark:invert' src="/favicon.png" width='45px' alt="" />
                 </Link>
             </div>
