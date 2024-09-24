@@ -21,8 +21,6 @@ const ProjectsSection = () => {
   
     const {x, y} = useMousePosition()
 
-    console.log(projects)
-
     return (
     <div id='project-section' className='mb-28 relative dark:bg-[#121212] dark:text-neutral-200'>
         <h2 className='w-full px-5 text-3xl mb-5'>Projects</h2>

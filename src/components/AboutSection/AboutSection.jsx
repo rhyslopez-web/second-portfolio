@@ -17,7 +17,7 @@ const AboutSection = () => {
   }, [])
 
   return (
-    <div className='mb-28 text-[#121212] dark:text-neutral-200 flex flex-col gap-10 lg:rounded-3xl bg-neutral-200 dark:bg-neutral-900 px-5 py-10 lg:p-10'>
+    <div id='about-section' className='mb-28 text-[#121212] dark:text-neutral-200 flex flex-col gap-10 lg:rounded-3xl bg-neutral-200 dark:bg-neutral-900 px-5 py-10 lg:p-10'>
         <h2 className='w-full text-3xl'>About Me</h2>
 
         <div className='grid grid-cols-1 lg:grid-cols-1 gap-10'>            
@@ -45,7 +45,7 @@ const AboutSection = () => {
                 <div className='grid lg:grid-cols-5 grid-cols-2 gap-5'>
                   {stacks && (
                     stacks.map((stack, index) => (
-                      <div className='flex items-center gap-5 bg-neutral-300 dark:bg-neutral-800 rounded-lg p-3'>
+                      <div key={index} className='flex items-center gap-5 bg-neutral-300 dark:bg-neutral-800 rounded-lg p-3'>
                         <div className='h-14 w-14 flex justify-center items-center'>
                           <img className='w-4/6' src={stack.attributes.Icon.data[0].attributes.url} alt="" />
                         </div>

@@ -17,7 +17,6 @@ const ExperienceSection = () => {
         fetchWorkExperience()
     }, [])
 
-    console.log(workExperience)
 
   return (
     <div id='experience-section' className='mb-28 px-5 dark:text-neutral-200'>

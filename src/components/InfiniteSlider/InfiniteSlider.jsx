@@ -32,8 +32,8 @@ const InfiniteSlider = () => {
         >
           {stacks && (
             stacks.map((stack, index) => (
-              <Slider.Slide>
-                <SliderLogo src={stack.attributes.Icon.data[0].attributes.url}/>
+              <Slider.Slide key={index}>
+                <SliderLogo  src={stack.attributes.Icon.data[0].attributes.url}/>
               </Slider.Slide>
             )) 
           )}
